@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+        --background-color: #F9F6FF;
+        --primary-color: #8E7BEF;
+        --secondary-color: #5D3BEF;
+        --semibold-text-color: #222222;
+        --regular-text-color:#423f40;
+        --white-color: #FFFFFF;
+        --aux-color: #F9F5F2;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    user-select: none;
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background-color: var(--white-color);
+    position: fixed;
+    width: 100%;
+    
+}
+.navbar img {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    border-radius: 50%;
+    transform: scale(1.1);
+
+    
+}
+.listNav {
+    display: none;
+}
+.menu_desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    position: fixed;
+    background-color:var(--white-color);
+    padding: 0.5rem;
+    transform: translateX(0);
+
+}
+
+
+.menu_desktop a {
+    padding: 0.1rem 0.5rem;
+    
+}
+.menu_desktop a:hover {  
+    transition: 1s;
+    border-bottom: 1px solid var(--secondary-color);   
+}
+
+.banner {
+    text-align: center;
+}
+.banner h2 {
+    font-size: 40px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--semibold-text-color);
+    height: 50px;
+}
+.banner p {
+    color: var(--regular-text-color);
+}
+
+.banner .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+}
+.banner .social img{
+    background-color: var(--primary-color);
+    padding: 7px;
+    border-radius: 50%;  
+    margin: 0; 
+}
+.banner .social img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.banner a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+.banner a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.banner a img{
+    width: 20px;
+    color:var(--white-color);
+}
+.banner a p {
+    color:var(--white-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 4rem;  
+}
+
+.about p {
+    color: var(--regular-text-color);
+}
+.about h2 {
+    margin-bottom: 1rem;
+    color: var(--semibold-text-color);
+}
+
+
+.skills h2 {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--semibold-text-color);
+}
+.hability {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+
+    
+}
+.hability h3 {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--semibold-text-color);
+}
+.ux {
+    background-color:var(--background-color);
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.8rem;
+}
+.productDesig {
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.8rem;
+}
+.subtitle {
+    display: flex;
+}
+
+.subtitle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.3rem;
+}
+.experiencia h2 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--semibold-text-color);
+}
+.inc {
+    display: flex;
+    flex-direction: column;
+
+}
+.work {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.work img {
+    margin-right: 1rem;
+}
+.data1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.data h4 {
+    color: var(--regular-text-color);
+}
+.data p {
+    color: var(--regular-text-color);
+    
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--semibold-text-color);
+    font-weight: bold;
+}
+.portafolio {
+    text-align: center;
+}
+
+.portafolio h2 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--semibold-text-color);
+}
+.portafolio img {
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--semibold-text-color);
+}
+.telefono {
+    margin-bottom: 5rem;
+}
+
+#contacto img {
+    background-color:var(--aux-color);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+
+}
+.msg  {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+@media (min-width:700px) {
+    a {
+        width: 80%;
+    }
+    .container {
+        max-width: 800px;
+    }
+    .listNav {
+        margin-top: 0.5rem;
+        display: flex;
+        width: 800px;
+        height: 50px;
+        gap: 2rem;
+        transform: translateX(0);
+    }
+    
+    .listNav a:hover{
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.4rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);      
+        border: none;
+    }
+    .navbar img {
+        display: none;
+    }
+    .banner {
+        display: flex;
+    }
+    .banner div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .banner div:nth-child(2) h2 {
+        margin-bottom: 1rem;   
+        font-size: 50px;
+    }
+    .banner div:nth-child(2) > p {
+        margin-top: 3rem;  
+    }
+    .banner .social {
+        margin-left: 0px;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .about {
+        margin-top: 5rem;
+    }
+    .inc {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .work img {
+        height: 60px;
+        width: 60px;
+        
+    }
+
+    .portafolio .images {
+        display: grid;
+        grid-template: 50% 50% / repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .menu_desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    #contacto img {
+        border-radius: 1rem;
+    }
+    #contacto img:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+
+    }
+    
+}
+
+
+
+
